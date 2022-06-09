@@ -1,5 +1,5 @@
 @ECHO OFF
 
-python3 manage.py collectstatic --no-input
+py -3.7 manage.py collectstatic --no-input
 
-python3 manage.py migrate
+py -3.7 manage.py migrate

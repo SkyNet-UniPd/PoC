@@ -11,7 +11,7 @@
 
     "devwin": "concurrently yarn:devwin:*",
     "devwin:react" : "yarn dev:react",
-    "devwin:python": "cd SkyNetChatbotVirtualEnv/SkyNetChatbot && build.bat && python3 manage.py runserver",
+    "devwin:python": "cd SkyNetChatbotVirtualEnv/SkyNetChatbot && build.bat && py -3.7 manage.py runserver",
     
     "build": "cd SkyNetChatbotVirtualEnv/SkyNetChatbot && sh build.sh",
     "start": "cd SkyNetChatbotVirtualEnv/SkyNetChatbot && gunicorn chat.wsgi:application",
